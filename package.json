@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "api:codegen": "openapi-typescript https://date.nager.at/swagger/v3/swagger.json -o ./api.d.ts"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.6.0",
+    "naive-ui": "^2.40.1",
+    "nuxt": "^3.13.2",
+    "nuxtjs-naive-ui": "^1.0.2",
+    "rand-seed": "^2.1.7",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.4.1"
+  }
+}
